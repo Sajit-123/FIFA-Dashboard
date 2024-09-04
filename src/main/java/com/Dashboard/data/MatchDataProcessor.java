@@ -48,5 +48,4 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
 
         return match;
     }
-
 }
