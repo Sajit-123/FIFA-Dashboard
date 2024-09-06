@@ -9,7 +9,7 @@ export const MatchSmallCard = ({ match, keys, teamName }) => {
     return (
         <div className="MatchSmallCard" key={match.matchID}>
             <h3>vs<Link to={otherTeamRoute}> {otherTeam}</Link></h3>
-            <p>{match.winningTeam} won by {winningTeamGoals} goal(s)</p>
+            <p>{match.winningTeam} won with {winningTeamGoals} goal(s)</p>
         </div>
     );
 }

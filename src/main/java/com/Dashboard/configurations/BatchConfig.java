@@ -52,7 +52,7 @@ public class BatchConfig {
                 return new JdbcBatchItemWriterBuilder<Match>()
                                 .sql("INSERT INTO match (year,date_time,stage,stadium,city,home_team_name,home_team_goals,away_team_goals,away_team_name,win_conditions,attendance,half_time_home_goals,half_time_away_goals,referee,assistant1,assistant2,round_id,match_id,home_team_initials,away_team_initials,winning_team)"
                                                 +
-                                                "VALUES (:year,:datetime,:stage,:stadium,:city,:homeTeamName,:homeTeamGoals,:awayTeamGoals,:awayTeamName,:winConditions,:attendance,:halfTimeHomeGoals,:halfTimeAwayGoals,:referee,:assistant1,:assistant2,:roundID,:matchID,:homeTeamInitials,:awayTeamInitials,:winningTeam)")
+                                                "VALUES (:year,:dateTime,:stage,:stadium,:city,:homeTeamName,:homeTeamGoals,:awayTeamGoals,:awayTeamName,:winConditions,:attendance,:halfTimeHomeGoals,:halfTimeAwayGoals,:referee,:assistant1,:assistant2,:roundID,:matchID,:homeTeamInitials,:awayTeamInitials,:winningTeam)")
                                 .dataSource(dataSource)
                                 .beanMapped()
                                 .build();

@@ -17,7 +17,7 @@ public class MatchDataProcessor implements ItemProcessor<MatchInput, Match> {
         Match match = new Match();
         final String winTeam;
         match.setYear((Integer.parseInt(matchInput.getYear())));
-        match.setDatetime(LocalDateTime.parse(matchInput.getDatetime()));
+        match.setDateTime(LocalDateTime.parse(matchInput.getDatetime()));
         match.setStage(matchInput.getStage());
         match.setStadium(matchInput.getStadium());
         match.setCity(matchInput.getCity());

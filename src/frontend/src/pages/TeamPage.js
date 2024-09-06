@@ -33,7 +33,7 @@ export const TeamPage = () => {
         teams ? (
             <div className="TeamPage">
                 <h1>{teams.teamName}</h1>
-                <MatchDetailCard teamName={teams.teamName} match={(teams.matches)} />
+                <MatchDetailCard teamName={teams.teamName} match={(teams.matches[0])} />
                 {(teams || {}).matches.slice(1).map((match, index) => <MatchSmallCard teamName={teams.teamName} keys={index} match={match} />)}
             </div>) : null
     );

@@ -16,7 +16,7 @@ public class Match {
     @Column(unique = false)
     private int year;
     @Column(name = "date_time", unique = false)
-    private LocalDateTime datetime;
+    private LocalDateTime dateTime;
     @Column(unique = false)
     private String stage;
 
@@ -82,14 +82,6 @@ public class Match {
 
     public void setYear(int year) {
         this.year = year;
-    }
-
-    public LocalDateTime getDatetime() {
-        return datetime;
-    }
-
-    public void setDatetime(LocalDateTime datetime) {
-        this.datetime = datetime;
     }
 
     public String getStage() {
@@ -226,6 +218,14 @@ public class Match {
 
     public void setWinningTeam(String winningTeam) {
         this.winningTeam = winningTeam;
+    }
+
+    public LocalDateTime getDateTime() {
+        return dateTime;
+    }
+
+    public void setDateTime(LocalDateTime dateTime) {
+        this.dateTime = dateTime;
     }
 
 }
